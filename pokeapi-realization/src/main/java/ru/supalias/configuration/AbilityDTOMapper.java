@@ -15,6 +15,7 @@ public interface AbilityDTOMapper {
             return null;
         }
         Ability ability = new Ability();
+        ability.setName(abilityDTO.getName());
         ability.setAbilitiesEffect(AbilitiesEffectDTOMapper.INSTANCE.abilitiesEffectDTOToAbilitiesEffect(abilityDTO.getEffectEntries().get(0)));
         return ability;
     }
