@@ -16,7 +16,7 @@ public class MainPageController {
     @Autowired
     PokemonRepositoryService pokemonRepositoryService;
 
-    @GetMapping("/pokemons/")
+    @GetMapping("/pokemons")
     public List<Pokemon> findAll() {
         return pokemonRepositoryService.findAll();
     }
