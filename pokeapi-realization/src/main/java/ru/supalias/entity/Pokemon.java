@@ -8,7 +8,7 @@ import java.util.List;
 
 @Data
 @Document(collection="pokemon")
-public class Pokemon  extends ResourceSupport {
+public class Pokemon {
     private Long id;
     private String name;
     private List<Ability> abilityList;
